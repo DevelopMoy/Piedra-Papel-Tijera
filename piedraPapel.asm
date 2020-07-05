@@ -5,7 +5,6 @@ include emu8086.inc
 .stack 100
 .data           
 
-
 msgBienv db ' Hacker 4 life BIENVENIDO AL PIEDRA PAPEL O TIJERA, VIVE O MUERE$'
 msg2 db 'INGRESE:$'
 msg3 db '*A -> PIEDRA$'
@@ -15,13 +14,11 @@ msg6 db '*ELECCION DEL CPU -> $'
 msg7 db ' PERDISTE !! :( $'
 msg8 db ' GANASTE !! :) $' 
 msg9 db ' EMPATAS !! :| $'
-msg10 db ‘PIEDRA $’
-msg11 db ‘PAPEL $’
-msg12 db ‘TIJERA $’
-msg13 db ‘CONTRA  $’
-msg14 db ‘QUIERES VOLVER A JUGAR? Y/N $’
-
-
+msg10 db â€˜PIEDRA $â€™
+msg11 db â€˜PAPEL $â€™
+msg12 db â€˜TIJERA $â€™
+msg13 db â€˜CONTRA  $â€™
+msg14 db â€˜QUIERES VOLVER A JUGAR? Y/N $â€™
 
 op db 0
 cpuOp db 0
@@ -101,7 +98,6 @@ int 21h
 
 ;LECTURA Y VALIDACION 
 
-
 mov ah,1
 int 21h 
 mov op,al
@@ -135,7 +131,6 @@ mov bx,3
 div bx              
 inc dx               
                   
-
 mov ax,dx            
                                                       
 mov cpuOp,dl    ; PARA CPU -> 1 PIEDRA 2 PAPEL 3 TIJERA
@@ -229,11 +224,6 @@ mov ax, @data
  int 21h
 jmp proce
 
-
-
-
-
-
 imp1_papel:
 
 mov ax, @data
@@ -246,7 +236,6 @@ jmp proce
 
 imp1_tijera:
      
-
 mov ax, @data
  mov ds,ax
  mov ah,09h
@@ -346,8 +335,6 @@ jb fin
 cmp op2,121
 je main
 jb fin
-
-
 
 fin:
 
