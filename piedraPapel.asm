@@ -5,7 +5,7 @@ include emu8086.inc
 .stack 100
 .data           
 
-msgBienv db ' BIENVENIDO AL PIEDRA PAPEL O TIJERA, VIVE O MUERE$'
+msgBienv db ' BIENVENIDO AL PIEDRA PAPEL O TIJERA$'
 msg2 db 'INGRESE:$'
 msg3 db '*A -> PIEDRA$'
 msg4 db '*B -> PAPEL$'
