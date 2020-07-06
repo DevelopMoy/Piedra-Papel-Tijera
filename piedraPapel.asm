@@ -14,11 +14,11 @@ msg6 db '*ELECCION DEL CPU -> $'
 msg7 db ' PERDISTE !! :( $'
 msg8 db ' GANASTE !! :) $' 
 msg9 db ' EMPATAS !! :| $'
-msg10 db ‘PIEDRA $’
-msg11 db ‘PAPEL $’
-msg12 db ‘TIJERA $’
-msg13 db ‘CONTRA  $’
-msg14 db ‘QUIERES VOLVER A JUGAR? Y/N $’
+msg10 db 'PIEDRA $'
+msg11 db 'PAPEL $'
+msg12 db 'TIJERA $'
+msg13 db 'CONTRA  $'
+msg14 db 'QUIERES VOLVER A JUGAR? Y/N $'
 
 op db 0
 cpuOp db 0
