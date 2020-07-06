@@ -6,7 +6,7 @@ include emu8086.inc
 .data           
 
 msgBienv db 'PIEDRA PAPEL O TIJERA, PRUEBA TU SUERTE$'
-msg2 db 'INGRESE:$'
+msg2 db '---- INGRESE ----$'
 msg3 db '*A -> PIEDRA$'
 msg4 db '*B -> PAPEL$'
 msg5 db '*C -> TIJERA$' 
